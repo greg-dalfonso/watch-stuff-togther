@@ -1,0 +1,36 @@
+$url-container-height: 40px
+$url-font-size: calc(#{$url-container-height} / 2)
+$url-container-width: 400px
+$url-border-width: 2px
+
+$btn-margin: calc((#{$url-container-width} / 50))
+$btn-width: calc((#{$url-container-width} / 2) - (#{$btn-margin} / 2))
+
+#url-container
+  width: $url-container-width
+  margin: auto
+
+#url
+  width: 100%
+  display: inline-table
+  background-color: rgb(220,220,220)
+  height: $url-container-height
+  border: solid $url-border-width rgb(180,180,180)
+  p
+    margin: 0
+    font-size: $url-font-size
+    line-height: $url-container-height
+    text-align: center
+
+#url-container-description
+  margin-bottom: 0
+  text-align: left
+
+#url-btn-group
+  width: $url-container-width
+  margin: $btn-margin auto
+
+button
+  width: calc(50% - #{$btn-margin} / 2)
+
+

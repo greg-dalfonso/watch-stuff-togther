@@ -8,6 +8,9 @@ import { MainBodyComponent } from './main-body/main-body.component';
 import { RouteStartSessionComponent } from './route-start-session/route-start-session.component';
 import { RouteErrorComponent } from './route-error/route-error.component';
 import { HomeComponent } from './home/home.component';
+import { UserWebcamComponent } from './user-webcam/user-webcam.component';
+import { FriendWebcamComponent } from './friend-webcam/friend-webcam.component';
+import { SessionLinkComponent } from './session-link/session-link.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -22,7 +25,10 @@ const routes: Routes = [
     MainBodyComponent,
     RouteStartSessionComponent,
     RouteErrorComponent,
-    HomeComponent
+    HomeComponent,
+    UserWebcamComponent,
+    FriendWebcamComponent,
+    SessionLinkComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
